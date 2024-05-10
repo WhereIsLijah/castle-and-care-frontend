@@ -47,6 +47,6 @@ jobs:
         uses: docker/build-push-action@v3
         with:
           context: ./castle-and-care-frontend/
-          file: Dockerfile
+          file: dockerfile
           push: true
           tags: ayomideoduba/cac-frontend:latest
