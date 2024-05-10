@@ -20,13 +20,16 @@ jobs:
 
       - name: Install Dependencies
         run: npm install
-
+        working-directory: ./castle-and-care-frontend
+        
       - name: Run Tests
         run: npm test
-
+        working-directory: ./castle-and-care-frontend
+        
       - name: Build
         run: npm run build
-
+        working-directory: ./castle-and-care-frontend
+        
   dockerize:
     needs: build-and-test
     runs-on: ubuntu-latest
@@ -40,7 +43,7 @@ jobs:
       - name: Build and Push Docker Image
         uses: docker/build-push-action@v3
         with:
-          context: .
+          context: ./castle-and-care-frontend
           file: Dockerfile
           push: true
           tags: ayomideoduba/cac-frontend:latest
