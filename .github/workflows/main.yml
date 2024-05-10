@@ -46,7 +46,7 @@ jobs:
       - name: Build and Push Docker Image
         uses: docker/build-push-action@v3
         with:
-          context: .
+          context: ./castle-and-care-frontend/
           file: /castle-and-care-frontend/Dockerfile
           push: true
           tags: ayomideoduba/cac-frontend:latest
