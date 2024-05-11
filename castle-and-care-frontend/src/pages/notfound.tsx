@@ -1,10 +1,10 @@
 import React from "react";
 
-const About: React.FC = () => {
+const Notfound: React.FC = () => {
     return(
         <>
         </>
     );
 }
 
-export default About;
+export default Notfound;
