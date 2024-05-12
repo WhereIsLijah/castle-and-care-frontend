@@ -1,0 +1,81 @@
+/* General Styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+section {
+    margin: 20px;
+    padding: 20px;
+}
+
+h1, h2 {
+    text-align: center; /* Centering all headings */
+}
+
+section {
+    padding: 20px;
+    border-bottom: 1px solid #ccc;
+}
+
+/* Hero Section */
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hero .home {
+    flex: 1;
+    padding-right: 40px; /* Adds spacing between text and image */
+}
+
+.hero img {
+    flex: 1;
+    width: 70%; /* Adjust the size of the hero image */
+    height: auto;
+}
+
+/* Featured Programs Section */
+.featured-program {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.featured-program img {
+    flex: 1;
+    width: 50%; /* Adjust the size of the image in featured programs */
+    height: auto;
+    order: 1; /* Puts the image to the left */
+}
+
+.featured-program div:last-child {
+    flex: 1;
+    padding-left: 20px; /* Adds spacing between image and text */
+}
+
+/* Testimonials Section */
+.testimonials ul {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Creates a 2-column grid layout */
+    gap: 10px;
+}
+
+.testimonials li {
+    background-color: #f4f4f4; /* Light grey background for testimonialsData */
+    padding: 10px;
+    list-style-type: none; /* Removes bullet points */
+}
+
+.testimonials p {
+    margin: 5px 0; /* Spacing for paragraphs inside testimonialsData */
+}
+
+.bootstrap-scope .d-block {
+    display: block !important;
+}
+.bootstrap-scope .w-100 {
+    width: 100% !important;
+}

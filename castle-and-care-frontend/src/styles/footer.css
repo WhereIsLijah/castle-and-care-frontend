@@ -1,0 +1,62 @@
+.footer {
+    background-color: #C890D1;  /* White background */
+    color: #333;  /* Dark text color for high contrast */
+    padding: 20px 50px;  /* Adequate padding around the content */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;  /* Full width */
+    max-width: 1200px;  /* Max width to constrain on larger screens */
+}
+
+.footer-logo img {
+    height: 50px;  /* Adjust based on your logo */
+}
+
+.footer-links,
+.footer-social {
+    display: flex;
+    align-items: center;
+}
+
+.footer-links a,
+.footer-social a {
+    margin-left: 20px;  /* Space out the links */
+    color: #333;  /* Dark link color for contrast */
+    text-decoration: none;  /* No underlines */
+}
+
+.footer-links a:hover,
+.footer-social a:hover {
+    text-decoration: underline;  /* Underline on hover for interactivity */
+}
+
+.footer-bottom {
+    margin-top: 20px;  /* Space from the main content */
+    font-size: 0.8em;  /* Smaller font size for secondary information */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .footer-content {
+        flex-direction: column;
+    }
+
+    .footer-links,
+    .footer-social {
+        justify-content: center;
+        margin-top: 10px;
+    }
+
+    .footer-links a,
+    .footer-social a {
+        margin: 5px;  /* Reduce margin in smaller screens */
+    }
+}

@@ -1,15 +1,11 @@
 import React from "react";
 import LogoImage from '../../images/cac-logo.png';  // Correctly imported image
 import Button from "./button";
-import './header.css';
-import { useNavigate } from 'react-router-dom';
+import '../../styles/header.css'
+import useCustomNavigate from "../../hooks/customNavigate";
 
 export default function Header() {
-    const navigate = useNavigate();
-
-    const handleClick = () => {
-        navigate('/donate');
-    };
+    const { goToDonate } = useCustomNavigate();
 
     return (
         <>
@@ -22,8 +18,8 @@ export default function Header() {
                     <li>Events</li>
                     <li>Get Involved</li>
                     <li>Testimonials</li>
+                    <Button onClick={goToDonate}>Donate</Button>
                 </ul>
-                <Button onClick={handleClick}>Donate</Button>
             </nav>
         </>
     );
