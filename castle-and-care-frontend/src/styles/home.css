@@ -3,6 +3,9 @@ body, html {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
+    overflow-x: hidden;
+    height: 100%; /* Ensure the body and html take up the full height */
+    background-color: #f8f8f8; /* Light background color for better contrast */
 }
 
 section {
@@ -11,7 +14,7 @@ section {
 }
 
 h1, h2 {
-    text-align: center; /* Centering all headings */
+    text-align: left; /* Left align all headings */
 }
 
 section {
@@ -22,19 +25,83 @@ section {
 /* Hero Section */
 .hero {
     display: flex;
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+    height: 91vh; /* Ensure the hero section takes up the full viewport height */
+    margin: 0; /* Remove any default margin */
+    padding: 0 50px; /* Add padding for better spacing */
+    background-color: #fff; /* White background for the hero section */
+}
+
+.hero {
+    display: flex;
+    width: 100%;
     justify-content: space-between;
     align-items: center;
 }
 
 .hero .home {
-    flex: 1;
-    padding-right: 40px; /* Adds spacing between text and image */
+    flex: 0 0 35%; /* Text takes up 25% of the container */
+    padding-right: 50px; /* Adds spacing between text and image */
+    animation: slide-in-left 1s ease-out forwards;
+}
+
+.home h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    line-height: 1.2;
+}
+
+.home p {
+    font-size: 1.25em; /* Larger paragraph font size */
+    margin-bottom: 30px; /* Spacing below the paragraph */
+    line-height: 1.5; /* Adjust line height for better readability */
 }
 
 .hero img {
-    flex: 1;
-    width: 70%; /* Adjust the size of the hero image */
+    flex: 0 0 65%; /* Image takes up 75% of the container */
+    width: 80%; /* Make sure the image takes up the full width of its flexbox */
     height: auto;
+    margin-left: 50px; /* Adds spacing to the left of the image */
+    border-radius: 15px; /* Adds rounded corners to the image */
+    animation: slide-in-right 1s ease-out forwards;
+}
+
+/* Button Styles */
+button {
+    background-color: #5e2d89; /* Purple background color for the button */
+    color: #fff; /* White text color */
+    padding: 10px 20px; /* Padding inside the button */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Rounded corners for the button */
+    font-size: 1.2em; /* Font size for the button text */
+    cursor: pointer; /* Pointer cursor on hover */
+}
+
+button:hover {
+    background-color: #4b2370; /* Darker purple on hover */
+}
+
+@keyframes slide-in-left {
+    0% {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slide-in-right {
+    0% {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
 }
 
 /* Featured Programs Section */
@@ -42,6 +109,11 @@ section {
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+.featured-program div h1{
+    font-size: 2.5em;
+    text-align: center;
 }
 
 .featured-program img {
@@ -57,25 +129,45 @@ section {
 }
 
 /* Testimonials Section */
+
+.testimonials {
+    height: 70vh;
+    overflow-y: auto;
+    border-bottom: none;
+    text-align: center;
+}
+
+.testimonials div h1{
+    font-size: 2.5em;
+    text-align: center;
+}
+
 .testimonials ul {
     display: grid;
     grid-template-columns: repeat(2, 1fr); /* Creates a 2-column grid layout */
-    gap: 10px;
+    gap: 30px;
 }
 
 .testimonials li {
-    background-color: #f4f4f4; /* Light grey background for testimonialsData */
-    padding: 10px;
+    background-color: #f4f4f4; /* Light grey background for testimonials */
+    padding: 20px;
     list-style-type: none; /* Removes bullet points */
+    border-radius: 15px;
+}
+
+.testimonials li p:first-child {
+    margin-bottom: 20px;
+}
+
+.testimonials li p:last-child {
+    font-weight: bold;
 }
 
 .testimonials p {
-    margin: 5px 0; /* Spacing for paragraphs inside testimonialsData */
+    margin: 5px 0; /* Spacing for paragraphs inside testimonials */
+    font-size: 1.25em;
 }
 
-.bootstrap-scope .d-block {
-    display: block !important;
-}
-.bootstrap-scope .w-100 {
-    width: 100% !important;
-}
+
+
+

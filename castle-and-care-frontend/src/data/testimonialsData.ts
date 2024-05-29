@@ -5,20 +5,20 @@ interface Testimonial {
 
 const TestimonialsData: Testimonial[] = [
     {
-        name: "Sarah",
-        description: "Working closely with this NGO has been an incredibly transformative journey for me. Their tireless dedication to uplifting marginalized communities and empowering individuals is nothing short of remarkable. Witnessing the positive impact they have on people's lives firsthand has truly inspired me to become a better person and advocate for positive change in my own community.",
+        name: "Tolulope (Volunteer)",
+        description: "The outreach programs offered by this NGO have been nothing short of life-changing. Their commitment to making a difference is evident in every project they undertake. I am grateful for their unwavering support.",
     },
     {
         name: "Michael",
-        description: "Reflecting on my experience with this NGO fills me with profound gratitude and admiration. During a period of great adversity in my life, they were like a beacon of hope, extending their unwavering support and compassion to me and my family. Their genuine commitment to making a difference goes beyond mere words; it's evident in every action they take and every life they touch.",
+        description: "Reflecting on my experience with this NGO fills me with profound gratitude and admiration. During a period of great adversity in my life, they were like a beacon of hope, extending their unwavering support and compassion to me and my family.",
     },
     {
-        name: "Emily",
-        description: "I've had the privilege of witnessing the profound impact this NGO has on the community firsthand, and it's nothing short of inspiring. Their holistic approach to social change focuses not only on addressing immediate needs but also on fostering long-term sustainability and empowerment. Through innovative programs and unwavering dedication, they are truly transforming lives and shaping a brighter future for generations to come.",
+        name: "Space-X (Sponsor)",
+        description: "I've had the privilege of witnessing the profound impact this NGO has on the community firsthand, and it's nothing short of inspiring. Their holistic approach to social change focuses not only on addressing immediate needs but also on fostering long-term sustainability and empowerment. ",
     },
     {
-        name: "David",
-        description: "Being part of this NGO's mission has been an enriching experience that has deeply touched my heart. Their commitment to social justice and equity is evident in every initiative they undertake. From providing essential services to advocating for systemic change, they are tireless champions of the marginalized and voiceless. It's an honor to stand alongside them in the fight for a more just and compassionate world.",
+        name: "Anon",
+        description: "Being part of this NGO's mission has been an enriching experience that has deeply touched my heart. Their commitment to social justice and equity is evident in every initiative they undertake. From providing essential services to advocating for systemic change, they are tireless champions of the marginalized and voiceless. ",
     },
     // {
     //     name: "Sophia",

@@ -1,10 +1,10 @@
 import React from "react";
 import Button from "../components/common/button";
 import useCustomNavigate from "../hooks/customNavigate";
-import HeroImage from "../images/hero.jpeg";
+import HeroImage from "../images/hero.jpg";
 import testimonialsData from "../data/testimonialsData";
 import '../styles/home.css';
-import MyCarousel from "../components/common/carousel";
+
 
 
 const Home: React.FC = () => {
@@ -21,7 +21,7 @@ const Home: React.FC = () => {
                     <Button onClick={goToDonate}>Donate</Button>
                 </div>
                 <div>
-                    <img src={HeroImage} alt="Hero Image"/>
+                    <img src={HeroImage} alt="Image from event"/>
                 </div>
             </section>
 
@@ -29,14 +29,12 @@ const Home: React.FC = () => {
                 <div>
                     <h1>Featured Programs</h1>
                 </div>
-                <div className="bootstrap-scope">
-                    <MyCarousel/>
-                </div>
+
                 <div>
                     <h2>
                     Highlight key programs that Castle and Care is currently focusing on.
-                Showcase upcoming events with small images or icons, dates, and titles with CTAs like "Join Us"
-                </h2>
+                    Showcase upcoming events with small images or icons, dates, and titles with CTAs like "Join Us"
+                    </h2>
                 </div>
             </section>
             <section className="testimonials">
@@ -49,8 +47,8 @@ const Home: React.FC = () => {
                     <ul>
                         {testimonialsData.map((data) => (
                             <li>
-                                <p>{data.description}</p>
-                                <p>{data.name}</p>
+                                <p>"{data.description}"</p>
+                                <p> - {data.name}</p>
                             </li>
                         ))}
                     </ul>
