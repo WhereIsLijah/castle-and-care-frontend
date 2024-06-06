@@ -1,0 +1,106 @@
+body, html {
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    overflow-x: hidden;
+    height: 100%; /* Ensure the body and html take up the full height */
+    background-color: #f8f8f8; /* Light background color for better contrast */
+}
+
+.contact-page {
+    text-align: center;
+    padding: 50px;
+}
+
+.main-text{
+    padding-bottom: 1.5%;
+}
+
+.main-text h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+.main-text p {
+    font-size: 1.7rem;
+    margin: 20px 0;
+    width: 60%;
+    text-align: center;
+    margin-left: 20%;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+/*.side-text {*/
+/*    font-size: 3.1rem;*/
+/*    font-weight: bold;*/
+/*    width: 30%;*/
+/*    margin-left: 13%;*/
+/*    text-align: left;*/
+/*    padding-bottom: 8%;*/
+/*}*/
+
+.side-image {
+    width: 30%;
+    margin-left: 13%;
+    border-radius: 50%;
+    padding-bottom: 2%;
+}
+
+.contact-form {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-right: 70px;
+}
+
+.form-group {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 15px;
+
+}
+
+.form-group input,
+.form-group select {
+    width: 48%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+
+}
+
+textarea {
+    width: 97%;
+    height: 150px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    margin-bottom: 15px;
+}
+
+button {
+    padding: 15px 25px;
+    background-color: #5a189a;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    align-self: center;
+}
+
+button:hover {
+    background-color: #4c178a;
+}

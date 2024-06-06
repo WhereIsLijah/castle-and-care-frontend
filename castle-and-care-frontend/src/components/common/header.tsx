@@ -11,7 +11,9 @@ export default function Header() {
         <>
             <nav className="header">
                 <div className="logo">
-                    <img src={LogoImage} alt="Castle and Care logo" />
+                    <a href="/">
+                        <img src={LogoImage} alt="Castle and Care logo"/>
+                    </a>
                 </div>
                 <ul className="navigation">
                     <li>About Us</li>

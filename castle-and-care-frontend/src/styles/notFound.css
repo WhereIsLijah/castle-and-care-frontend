@@ -1,0 +1,57 @@
+.not-found-container {
+    text-align: center;
+    background-color: #f8f8f8;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.not-found-container h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.not-found-container p {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.home-link {
+    font-size: 1.2rem;
+    color: #007bff;
+    text-decoration: none;
+    margin-bottom: 20px;
+}
+
+.home-link:hover {
+    text-decoration: underline;
+}
+
+.suggestions {
+    margin-top: 30px;
+}
+
+.suggestions h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.suggestions ul {
+    list-style: none;
+    padding: 0;
+}
+
+.suggestions li {
+    margin-bottom: 10px;
+}
+
+.suggestions li a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.suggestions li a:hover {
+    text-decoration: underline;
+}
