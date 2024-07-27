@@ -3,6 +3,7 @@ import LogoImage from '../../images/cac-logo.png';  // Correctly imported image
 import Button from "./button";
 import '../../styles/header.css'
 import useCustomNavigate from "../../hooks/customNavigate";
+import about from "../../pages/about";
 
 export default function Header() {
     const { goToDonate } = useCustomNavigate();
@@ -16,7 +17,7 @@ export default function Header() {
                     </a>
                 </div>
                 <ul className="navigation">
-                    <li>About Us</li>
+                    <li><a href={"/about"}></a>About Us</li>
                     <li>Events</li>
                     <li>Get Involved</li>
                     <li>Testimonials</li>

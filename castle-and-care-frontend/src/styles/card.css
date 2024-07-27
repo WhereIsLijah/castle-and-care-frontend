@@ -1,0 +1,50 @@
+.services-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+    list-style-type: none;
+    padding: 0;
+}
+
+.card-container {
+    position: relative;
+    width: 100%;
+    height: 220px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    overflow: hidden; /* Ensure the image doesn't overflow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-container:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card-container:hover .card-img {
+    opacity: 1;
+}
+
+.card-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.3; /* Reduce the opacity of the image */
+    object-fit: cover; /* Ensure the image covers the entire card */
+}
+
+.card-title {
+    position: relative;
+    font-size: 1.5em;
+    margin: 0;
+    text-align: center;
+    color: #333;
+    font-weight: bold; /* Make the text bold */
+    z-index: 1; /* Ensure the text is above the image */
+}

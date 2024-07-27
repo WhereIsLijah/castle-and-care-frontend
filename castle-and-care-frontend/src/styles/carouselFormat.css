@@ -1,0 +1,11 @@
+.carousel-image-container {
+    height: 400px;
+    background-color: #777;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.carousel-image-container h2 {
+    color: #fff;
+}
