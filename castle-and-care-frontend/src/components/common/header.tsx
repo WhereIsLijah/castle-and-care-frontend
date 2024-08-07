@@ -3,7 +3,7 @@ import LogoImage from '../../images/cac-logo.png';  // Correctly imported image
 import Button from "./button";
 import '../../styles/header.css'
 import useCustomNavigate from "../../hooks/customNavigate";
-import about from "../../pages/about";
+
 
 export default function Header() {
     const { goToDonate } = useCustomNavigate();

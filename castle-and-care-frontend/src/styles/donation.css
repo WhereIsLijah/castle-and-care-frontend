@@ -1,0 +1,94 @@
+.container {
+    margin: 30px;
+    padding-left: 200px;
+    padding-bottom: 150px;
+    padding-right: 200px;
+    padding-top: 100px;
+    display: block;
+    /*border: 1px solid black;*/
+}
+
+.container p {
+    font-size: 1rem;
+    margin-left: 100px;
+    margin-right: 120px;
+}
+
+.donation-text {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.donation-text h1 {
+    font-size: 3rem;
+    color: #4b2370;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.donation-text p {
+    font-size: 1.3rem;
+    color: black;
+}
+
+.frequency-buttons {
+    width: 80%;
+    margin-bottom: 20px;
+    display: flex;
+    margin-left: 100px;
+}
+
+.amount-buttons {
+    width: 80%;
+    margin-bottom: 20px;
+    display: flex;
+    margin-left: 100px;
+}
+
+.frequency-buttons p, .amount-buttons p {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.frequency-buttons button, .amount-buttons button {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    margin: 3px;
+    font-size: 1rem;
+    border: 1px solid;
+    border-radius: 4px;
+    background-color: #fff;
+    color: black;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.frequency-buttons button.selected, .amount-buttons button.selected {
+    background-color: #999898;
+    color: black;
+}
+
+.frequency-buttons button:hover, .amount-buttons button:hover {
+    background-color: white;
+}
+
+.donate-button {
+    display: block;
+    width: 80%;
+    padding: 15px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #fff;
+    background-color: #633A72;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-left: 100px;
+}
+
+.donate-button:hover {
+    background-color: #7C5B8C;
+}
