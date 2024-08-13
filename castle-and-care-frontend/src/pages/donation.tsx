@@ -64,15 +64,17 @@ const Donation: React.FC = () => {
                 >
                     $200.00
                 </button>
-                <button
-                    className={selectedAmount === 'custom' ? 'selected' : ''}
-                    onClick={() => handleAmountClick('custom')}
-                >
-                    Enter Amount
-                </button>
+                {/*<button*/}
+                {/*    className={selectedAmount === 'custom' ? 'selected' : ''}*/}
+                {/*    onClick={() => handleAmountClick('custom')}*/}
+                {/*>*/}
+                {/*    Enter Amount*/}
+                {/*</button>*/}
+                <input name="myInput" className={selectedAmount === 'custom' ? 'selected' : ''}
+                       placeholder="Enter Amount" onInput={() => handleAmountClick('custom')}/>
             </div>
             <div>
-                <button className="donate-button">Donate</button>
+            <button className="donate-button">Donate</button>
             </div>
         </div>
     );

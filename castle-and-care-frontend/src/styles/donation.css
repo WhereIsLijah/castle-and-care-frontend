@@ -51,7 +51,7 @@
     text-align: center;
 }
 
-.frequency-buttons button, .amount-buttons button {
+.frequency-buttons button, .amount-buttons button, .amount-buttons input{
     display: block;
     width: 100%;
     padding: 15px;
