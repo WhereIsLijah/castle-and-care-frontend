@@ -1,5 +1,13 @@
 import React from "react";
 
-export default function events() {
+const Events: React.FC = () => {
+    return(
+        <>
+            <div className="">
 
+            </div>
+        </>
+    );
 }
+
+export default Events;

@@ -16,7 +16,7 @@ const Footer = () => {
     return (
         <footer className="footer">
             <div className="footer-content">
-                <div className="logo">
+                <div className="footer-logo">
                     <a href="/">
                         <img src={LogoImage} alt="Castle and Care logo"/>
                     </a>

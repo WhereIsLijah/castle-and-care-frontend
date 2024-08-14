@@ -24,8 +24,6 @@
     height: 40px;
 }
 
-
-
 .footer-links,
 .footer-social {
     display: flex;
@@ -36,9 +34,13 @@
 
 .footer-links a,
 .footer-social a {
-    margin-left: 40px;
+    margin-left: 60px;
     color: #333;
     text-decoration: none;
+}
+
+.footer-social a {
+    margin-left: 10px; /* Adjust this value to reduce the gap */
 }
 
 .footer-links a:hover,
@@ -47,11 +49,6 @@
     color: white;
     transform: scale(1.2);
 }
-
-/*.footer-bottom {*/
-/*    margin-top: 20px;*/
-/*    font-size: 0.8em;*/
-/*}*/
 
 @media (max-width: 768px) {
     .footer-content {

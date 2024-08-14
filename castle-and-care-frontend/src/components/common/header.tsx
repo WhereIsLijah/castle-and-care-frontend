@@ -3,6 +3,7 @@ import LogoImage from '../../images/cac-logo.png';  // Correctly imported image
 import Button from "./button";
 import '../../styles/header.css'
 import useCustomNavigate from "../../hooks/customNavigate";
+import {Link} from "react-router-dom";
 
 
 export default function Header() {
@@ -17,10 +18,10 @@ export default function Header() {
                     </a>
                 </div>
                 <ul className="navigation">
-                    <li><a href={"/about"}></a>About Us</li>
-                    <li>Events</li>
-                    <li>Get Involved</li>
-                    <li>Testimonials</li>
+                    <li><Link to="/about">About Us</Link></li>
+                    <li><Link to="/events">Events</Link></li>
+                    <li><Link to="/get-involved">Get Involved</Link></li>
+                    <li><Link to="/testimonials">Testimonials</Link></li>
                     <Button onClick={goToDonate}>Donate</Button>
                 </ul>
             </nav>

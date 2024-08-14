@@ -1,11 +1,12 @@
 import React from "react";
 import VisionMission from "../images/VandM.png";
 import "../styles/about.css";
-import Card from "../components/common/card";
+import TestimonialCard from "../components/common/testimonialCard";
 import HelpImg from "../images/help.jpg";
 import RaisingAwareness from "../images/raising_aware.jpg";
 import ReliefPoverty from "../images/relief_poverty.jpg";
 import GivingInfo from "../images/giving_info.jpg";
+import TestimonialImage1 from "../images/testimonial1.png";
 
 
 const About: React.FC = () => {
@@ -59,10 +60,16 @@ const About: React.FC = () => {
                 </p>
 
                 <div className="services-list">
-                    <Card imgAlt="Direct Help" imgSrc={HelpImg} title={"Direct Help"}></Card>
-                    <Card imgAlt="Giving Information" imgSrc={GivingInfo} title={"Giving Information"}></Card>
-                    <Card imgAlt="Raising Awareness" imgSrc={RaisingAwareness} title={"Raising Awareness"}></Card>
-                    <Card imgAlt="Relieving Poverty" imgSrc={ReliefPoverty} title={"Relieving Poverty"}></Card>
+                    {/*<TestimonialCard imgAlt="Direct Help" imgSrc={HelpImg} title={"Direct Help"}></TestimonialCard>*/}
+                    {/*<TestimonialCard imgAlt="Giving Information" imgSrc={GivingInfo} title={"Giving Information"}></TestimonialCard>*/}
+                    {/*<TestimonialCard imgAlt="Raising Awareness" imgSrc={RaisingAwareness} title={"Raising Awareness"}></TestimonialCard>*/}
+                    {/*<TestimonialCard imgAlt="Relieving Poverty" imgSrc={ReliefPoverty} title={"Relieving Poverty"}></TestimonialCard>*/}
+                    {/*<TestimonialCard*/}
+                    {/*    imgSrc={TestimonialImage1}*/}
+                    {/*    testimonial="Being part of this NGO's mission has been an enriching experience that has deeply touched my heart. Their commitment to social justice and equity is evident in every initiative they undertake."*/}
+                    {/*    userName="Jane Smith"*/}
+                    {/*    title="Volunteer"*/}
+                    {/*/>*/}
                 </div>
             </section>
         </div>

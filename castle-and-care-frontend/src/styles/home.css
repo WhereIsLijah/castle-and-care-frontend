@@ -137,31 +137,11 @@ button:hover {
     text-align: center;
 }
 
-.testimonials div h1{
-    font-size: 2.5em;
+.testimonials div h2{
+    font-size: 2em;
     text-align: center;
 }
 
-.testimonials ul {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr); /* Creates a 2-column grid layout */
-    gap: 30px;
-}
-
-.testimonials li {
-    background-color: #f4f4f4; /* Light grey background for testimonials */
-    padding: 20px;
-    list-style-type: none; /* Removes bullet points */
-    border-radius: 15px;
-}
-
-.testimonials li p:first-child {
-    margin-bottom: 20px;
-}
-
-.testimonials li p:last-child {
-    font-weight: bold;
-}
 
 .testimonials p {
     margin: 5px 0; /* Spacing for paragraphs inside testimonials */

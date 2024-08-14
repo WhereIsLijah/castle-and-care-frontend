@@ -4,6 +4,9 @@ import useCustomNavigate from "../hooks/customNavigate";
 import HeroImage from "../images/hero.jpg";
 import testimonialsData from "../data/testimonialsData";
 import '../styles/home.css';
+import TestimonialImage1 from "../images/testimonial1.png";
+import TestimonialCard from "../components/common/testimonialCard";
+import TestimonialCarousel from "../components/common/testimonialCarousel";
 
 
 
@@ -39,19 +42,12 @@ const Home: React.FC = () => {
             </section>
             <section className="testimonials">
                 <div>
-                    <h1>
-                        Testimonials
-                    </h1>
+                    <h2>
+                        What the People Think About Us
+                    </h2>
                 </div>
                 <div>
-                    <ul>
-                        {testimonialsData.map((data) => (
-                            <li>
-                                <p>"{data.description}"</p>
-                                <p> - {data.name}</p>
-                            </li>
-                        ))}
-                    </ul>
+                    <TestimonialCarousel />
                 </div>
             </section>
         </>

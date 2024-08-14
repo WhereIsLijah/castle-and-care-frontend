@@ -8,7 +8,8 @@
 }
 
 .logo img {
-    height: 70px; /* Adjust based on your design */
+    height: 100px;
+    margin-left: 120px;
 }
 
 .navigation {
@@ -17,13 +18,20 @@
     gap: 20px;
     margin: 0;
     padding: 0;
+    margin-right: 80px;
     margin-left: auto; /* This pushes the navigation to the right */
 }
 
 .navigation li {
     padding: 10px;
-    transition: color 0.3s ease-in-out; /* Smooth transition for hover effect */
+    transition: color 0.3s ease-in-out;
 }
+
+.navigation a {
+    text-decoration: none;
+    color: black;
+}
+
 
 .navigation li:hover {
     color: #ffffff; /* Changes text color on hover */

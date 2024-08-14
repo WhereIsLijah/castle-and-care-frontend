@@ -1,5 +1,7 @@
 import React from 'react';
 import '../../styles/carouselFormat.css';
+import TestimonialImage1 from "../../images/testimonial1.png";
+import TestimonialCard from "./testimonialCard";
 
 interface CarouselImageProp {
     text: string;
@@ -15,3 +17,4 @@ const CarouselFormat: React.FC<CarouselImageProp> = ({ text }) => {
 };
 
 export default CarouselFormat;
+
