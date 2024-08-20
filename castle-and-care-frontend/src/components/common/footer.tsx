@@ -4,8 +4,8 @@ import LogoImage from '../../images/cac-logo.png';
 import FacebookIcon from '../../images/fb.svg';
 import TwitterIcon from '../../images/twitter.svg';
 import InstagramIcon from '../../images/ig.svg';
-import Button from "./button";
 import useCustomNavigate from "../../hooks/customNavigate";
+import PrimaryButton from "./primaryButton";
 
 
 const Footer = () => {
@@ -39,7 +39,7 @@ const Footer = () => {
                         </a>
                     </div>
                 </div>
-                <div><Button onClick={goToDonate}>Donate</Button></div>
+                <div className="footer-button"><PrimaryButton onClick={goToDonate}>Donate</PrimaryButton></div>
 
             </div>
             {/*<div className="footer-bottom">*/}

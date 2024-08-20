@@ -1,3 +1,8 @@
+body, html {
+    margin: 0;
+    padding: 0;
+}
+
 .header {
     display: flex;
     align-items: center;
@@ -5,10 +10,12 @@
     padding: 10px 20px;
     background-color: #C890D1; /* A shade of purple */
     color: black;
+    position: relative; /* Ensure the element is positioned */
+    z-index: 10; /* Higher than the carousel */
 }
 
 .logo img {
-    height: 100px;
+    height: 80px;
     margin-left: 120px;
 }
 

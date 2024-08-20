@@ -1,6 +1,6 @@
 import React, {ChangeEvent, useState} from "react";
 import '../styles/contact.css';
-import Button from '../components/common/button';
+import Button from '../components/common/primaryButton';
 import {Simulate} from "react-dom/test-utils";
 import Thankyou from './../images/thankyou.jpeg';
 

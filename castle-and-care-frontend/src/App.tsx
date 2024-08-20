@@ -6,6 +6,7 @@ import AboutPage from './pages/about';
 import ContactPage from '../src/pages/contact';
 import NotFoundPage from './pages/notFound';
 import DonationPage from './pages/donation';
+import EventPage from './pages/events';
 import Layout from "./components/layout/layout";
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
                           <Route path="/about" element={<AboutPage />} />
                           <Route path="/contact" element={<ContactPage />} />
                           <Route path="/donate" element={<DonationPage />} />
+                          <Route path="/events" element={<EventPage />} />
                       <Route path="*" element={<NotFoundPage />} />
                   </Route>
               </Routes>

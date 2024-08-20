@@ -1,6 +1,6 @@
 import React from "react";
 import LogoImage from '../../images/cac-logo.png';  // Correctly imported image
-import Button from "./button";
+import PrimaryButton from "./primaryButton";
 import '../../styles/header.css'
 import useCustomNavigate from "../../hooks/customNavigate";
 import {Link} from "react-router-dom";
@@ -22,7 +22,7 @@ export default function Header() {
                     <li><Link to="/events">Events</Link></li>
                     <li><Link to="/get-involved">Get Involved</Link></li>
                     <li><Link to="/testimonials">Testimonials</Link></li>
-                    <Button onClick={goToDonate}>Donate</Button>
+                    <PrimaryButton onClick={goToDonate}>Donate</PrimaryButton>
                 </ul>
             </nav>
         </>

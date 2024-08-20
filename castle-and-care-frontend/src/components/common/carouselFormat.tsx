@@ -1,5 +1,5 @@
 import React from 'react';
-import '../../styles/carouselFormat.css';
+import '../../styles/homepagecarousel.css';
 import TestimonialImage1 from "../../images/testimonial1.png";
 import TestimonialCard from "./testimonialCard";
 

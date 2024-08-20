@@ -1,11 +1,19 @@
+body, html {
+    margin: 0;
+    padding: 0;
+}
+
+
 .footer {
     background-color: #C890D1;
     color: #333;
-    padding: 20px 50px;
-    display: flex;
+    padding: 10px 20px;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    position: relative; /* Ensure the element is positioned */
+    z-index: 10; /* Higher than the carousel */
+    height: 80px;
 }
 
 .footer-content {
@@ -13,11 +21,11 @@
     align-items: center;
     justify-content: space-between;
     width: 100%;
-    max-width: 1200px;
+    max-width: 1230px;
 }
 
 .footer-content img {
-    height: 100px;
+    height: 80px;
 }
 
 .footer-links img {
@@ -49,6 +57,11 @@
     color: white;
     transform: scale(1.2);
 }
+
+.footer-button{
+    margin-left: 120px;
+}
+
 
 @media (max-width: 768px) {
     .footer-content {

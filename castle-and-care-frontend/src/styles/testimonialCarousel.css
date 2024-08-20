@@ -5,7 +5,7 @@
     max-width: 700px; /* Adjust based on the card's width */
     margin: 0 auto;
     overflow: hidden; /* Hide overflow to show only one card */
-    padding: 20px 0;
+    padding: 0;
 }
 
 .card-list {
@@ -17,6 +17,7 @@
     width: 100%; /* Full width of the container */
     -ms-overflow-style: none;  /* IE and Edge */
     scrollbar-width: none;  /* Firefox */
+    transition: transform 0.3s ease; /* Smooth transition */
 }
 
 
@@ -29,26 +30,26 @@
     box-sizing: border-box; /* Ensure padding and border are included in the width */
 }
 
-.scroll-button {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background-color: rgba(0, 0, 0, 0.5);
-    color: white;
-    border: none;
-    padding: 10px;
-    cursor: pointer;
-    z-index: 1;
-    border-radius: 50%;
-}
+/*.scroll-button {*/
+/*    position: absolute;*/
+/*    top: 50%;*/
+/*    transform: translateY(-50%);*/
+/*    background-color: rgba(0, 0, 0, 0.5);*/
+/*    color: white;*/
+/*    border: none;*/
+/*    padding: 10px;*/
+/*    cursor: pointer;*/
+/*    z-index: 1;*/
+/*    border-radius: 50%;*/
+/*}*/
 
-.scroll-button.left {
-    left: 10px;
-}
+/*.scroll-button.left {*/
+/*    left: 10px;*/
+/*}*/
 
-.scroll-button.right {
-    right: 10px;
-}
+/*.scroll-button.right {*/
+/*    right: 10px;*/
+/*}*/
 
 .scroll-button:hover {
     background-color: rgba(0, 0, 0, 0.7);

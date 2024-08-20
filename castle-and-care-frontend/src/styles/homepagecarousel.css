@@ -1,0 +1,37 @@
+
+.custom-carousel-image {
+    width: 1600px; /* Set desired width */
+    height: 710px; /* Set desired height */
+    object-fit: cover; /* Ensure the image covers the entire area */
+}
+
+.carousel-container {
+    margin: 0;
+    padding: 0;
+}
+
+.carousel-container .carousel-control-prev,
+.carousel-container .carousel-control-next {
+    background-color: transparent; /* Or another color */
+    padding: 0; /* Ensure padding matches design */
+    border-radius: 50%; /* Keep circular shape */
+    color: inherit;
+}
+
+.carousel-container h5, .carousel-container p{
+    color: black;
+}
+
+.semi-transparent-carousel-text{
+    background-color: rgba(0, 0, 0, 0.3); /* Black background with 50% opacity */
+
+    padding: 10px; /* Padding around the text */
+    border-radius: 5px; /* Optional: Add rounded corners */
+    display: inline-block; /* Keep the background tight to the text */
+}
+
+.semi-transparent-carousel-text h5, .semi-transparent-carousel-text p{
+    color: #f4f4f4; /* Text color */
+    padding: 2px;
+
+}

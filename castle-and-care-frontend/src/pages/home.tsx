@@ -1,13 +1,10 @@
 import React from "react";
-import Button from "../components/common/button";
+// import Button from "../components/common/button";
 import useCustomNavigate from "../hooks/customNavigate";
 import HeroImage from "../images/hero.jpg";
-import testimonialsData from "../data/testimonialsData";
 import '../styles/home.css';
-import TestimonialImage1 from "../images/testimonial1.png";
-import TestimonialCard from "../components/common/testimonialCard";
 import TestimonialCarousel from "../components/common/testimonialCarousel";
-
+import HomepageCarousel from "../components/common/homepageCarousel";
 
 
 const Home: React.FC = () => {
@@ -15,24 +12,13 @@ const Home: React.FC = () => {
 
     return(
         <>
-            <section className="hero">
-                <div className="home">
-                    <h1>SOMETHING ABOUT CASTLE AND CARE</h1>
-                    <p>A clear and concise statement right in the center or overlaying
-                        the hero image that encapsulates the essence of the organization.
-                    </p>
-                    <Button onClick={goToDonate}>Donate</Button>
-                </div>
-                <div>
-                    <img src={HeroImage} alt="Image from event"/>
-                </div>
+            <section className="homepage-hero-carousel">
+                <HomepageCarousel />
             </section>
-
             <section className="featured-program">
                 <div>
-                    <h1>Featured Programs</h1>
+                    <h1>Our Projects</h1>
                 </div>
-
                 <div>
                     <h2>
                     Highlight key programs that Castle and Care is currently focusing on.
@@ -42,9 +28,9 @@ const Home: React.FC = () => {
             </section>
             <section className="testimonials">
                 <div>
-                    <h2>
-                        What the People Think About Us
-                    </h2>
+                    <h1 className="testimonial-title">
+                        What The People Think About Us
+                    </h1>
                 </div>
                 <div>
                     <TestimonialCarousel />
