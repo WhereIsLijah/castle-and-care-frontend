@@ -35,15 +35,13 @@ const ContactForm: React.FC = () => {
     };
 
     return(
-        <div className="contact-page">
-            <div className="main-text">
+        <section className="contact-page">
+            <div className="contact-main-text">
                 <h1> GET IN TOUCH WITH US</h1>
                 <p>Your feedback and donations are vital to our mission, do reach out with any questions, suggestions, or
                     insights to help us better serve the community.</p>
-
             </div>
-            <div className="container">
-                {/*<h1 className="side-text">Your voice matters to us reach out anytime!</h1>*/}
+            <div className="contact-container">
                 <img src={Thankyou} className="side-image" alt="Image from event"/>
                 <form method="POST" className="contact-form" onSubmit={handleSubmit}>
                     <div className="form-group">
@@ -77,7 +75,7 @@ const ContactForm: React.FC = () => {
                 </form>
             </div>
 
-        </div>
+        </section>
     );
 }
 
