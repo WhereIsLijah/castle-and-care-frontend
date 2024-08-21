@@ -191,5 +191,24 @@ button:hover {
 
 .bullet-point{
     display: flex;
-    align-items: center; /* Aligns items vertically centered */
+    align-items: center;
+}
+
+.flip-content {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.flip-content img{
+    margin-right: -150px;
+}
+
+.flip-content .background-rectangle {
+    right: 500px;
+    left: auto;
+}
+
+.flip-content h2, .flip-content p, .flip-content .project-read-more-button {
+    /*margin-left: 0; */
+    margin-right: 100px;
 }

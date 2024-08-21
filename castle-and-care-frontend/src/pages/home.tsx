@@ -62,11 +62,11 @@ const Home: React.FC = () => {
                         </div>
                     </div>
                 </div>
-                <div className="homepage-projects">
+                <div className="homepage-projects flip-content">
                     <img src={CommunityService} alt={"Community Service"} />
                     <div className="background-rectangle"></div>
                     <div>
-                        <h2>Medical Outreach</h2>
+                        <h2>Community Service</h2>
                         <p>Through regular medical camps, health education workshops, and free
                             screenings, the organization addresses critical healthcare needs and promotes well-being
                             among
