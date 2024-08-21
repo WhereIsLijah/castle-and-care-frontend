@@ -3,9 +3,8 @@ body, html {
     padding: 0;
 }
 
-
 .footer {
-    background-color: #C890D1;
+    background-color: rgba(72, 61, 139, 0.5);
     color: #333;
     padding: 10px 20px;
     flex-direction: column;
@@ -61,7 +60,6 @@ body, html {
 .footer-button{
     margin-left: 120px;
 }
-
 
 @media (max-width: 768px) {
     .footer-content {

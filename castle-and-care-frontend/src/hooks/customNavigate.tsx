@@ -5,8 +5,9 @@ const useCustomNavigate = () => {
 
     const goToDonate = () => navigate('/donate');
     const goToHome = () => navigate('/');
+    const goToEvents = () => navigate('/events')
 
-    return { goToDonate, goToHome };
+    return { goToDonate, goToHome, goToEvents };
 }
 
 export default useCustomNavigate;

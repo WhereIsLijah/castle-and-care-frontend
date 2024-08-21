@@ -10,12 +10,14 @@ body, html {
 h1, h2 {
     text-align: center; /* Left align all headings */
 }
+section{
+    border-bottom: 1px solid #ccc;
+}
 
 .featured-program, .testimonials {
     padding: 20px;
     height: 100vh;
     margin: 20px;
-    border-bottom: 1px solid #ccc;
 }
 
 .testimonials{
@@ -103,6 +105,91 @@ button:hover {
     font-size: 1.25em;
 }
 
+.homepage-about{
+    padding: 80px;
+}
 
+.homepage-about h1{
+    text-align: Left;
+    font-size: 4em;
+    margin-bottom: 20px;
+}
 
+.homepage-about p{
+    margin-bottom: 30px;
+}
 
+.project-container{
+    padding: 80px 80px 80px 0;
+
+}
+
+.project-container h1{
+    text-align: Left;
+    font-size: 4em;
+    margin-bottom: 20px;
+}
+
+.project-container p{
+    margin-bottom: 30px;
+}
+
+.homepage-projects {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 40px;
+    padding: 40px 40px 40px 0;
+}
+
+.homepage-projects img{
+    width: 700px;
+    height: auto;
+    max-width: 700px;
+    max-height: 500px;
+    z-index: 2;
+}
+
+.homepage-projects h2{
+    margin-bottom: 40px;
+    margin-left: 100px;
+    text-align: left;
+    font-size: 3em;
+}
+
+.homepage-projects p{
+    margin-bottom: 40px;
+    margin-left: 100px;
+}
+
+.project-read-more-button{
+    margin-left: 100px;
+}
+
+.background-rectangle {
+    position: absolute;
+    top: 0;
+    left: 500px;
+    width: 1200px;
+    height: 100%;
+    background-color: rgba(72, 61, 139, 0.5);
+    z-index: 1;
+}
+
+.homepage-projects h2, .homepage-projects p, .project-read-more-button {
+    z-index: 3; /* Ensure text content and button are above the rectangle */
+    position: relative; /* Position relative to respect z-index */
+}
+
+.header-bullet{
+    width: 100px;
+    height: 5px;
+    background-color: rgba(72, 61, 139, 0.5);
+    margin-right: 20px;
+}
+
+.bullet-point{
+    display: flex;
+    align-items: center; /* Aligns items vertically centered */
+}
