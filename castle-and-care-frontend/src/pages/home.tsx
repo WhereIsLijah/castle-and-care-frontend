@@ -2,13 +2,14 @@ import React from "react";
 // import Button from "../components/common/button";
 import useCustomNavigate from "../hooks/customNavigate";
 import HeroImage from "../images/hero.jpg";
-import '../styles/home.css';
+import '../styles/pages/home.css';
 import TestimonialCarousel from "../components/common/testimonialCarousel";
 import HomepageCarousel from "../components/common/homepageCarousel";
 import EndMenstrualMyth from "../../src/images/hero.jpg"
 import GivingInfo from "../images/giving_info.jpg";
 import CommunityService from "../images/ngo3.jpeg";
 import PrimaryButton from "../components/common/primaryButton";
+import SponsorsCard from "../components/common/sponsorsCarousel";
 
 
 const Home: React.FC = () => {
@@ -69,11 +70,8 @@ const Home: React.FC = () => {
                         <h2>Community Service</h2>
                         <p>Through regular medical camps, health education workshops, and free
                             screenings, the organization addresses critical healthcare needs and promotes well-being
-                            among
-                            vulnerable populations. The outreach initiative not only provides immediate care but also
-                            works to
-                            educate communities on preventive health practices, ensuring that they have the knowledge
-                            and
+                            among vulnerable populations. The outreach initiative not only provides immediate care but also
+                            works to educate communities on preventive health practices, ensuring that they have the knowledge
                             resources to lead healthier lives.</p>
                         <div className="project-read-more-button">
                             <PrimaryButton onClick={goToEvents}>Read more</PrimaryButton>
@@ -87,12 +85,9 @@ const Home: React.FC = () => {
                         <h2>Medical Outreach</h2>
                         <p>Through regular medical camps, health education workshops, and free
                             screenings, the organization addresses critical healthcare needs and promotes well-being
-                            among
-                            vulnerable populations. The outreach initiative not only provides immediate care but also
-                            works to
-                            educate communities on preventive health practices, ensuring that they have the knowledge
-                            and
-                            resources to lead healthier lives.</p>
+                            among vulnerable populations. The outreach initiative not only provides immediate care but also
+                            works to educate communities on preventive health practices, ensuring that they have the knowledge
+                            and resources to lead healthier lives.</p>
                         <div className="project-read-more-button">
                             <PrimaryButton onClick={goToEvents}>Read more</PrimaryButton>
                         </div>
@@ -100,22 +95,21 @@ const Home: React.FC = () => {
                 </div>
 
             </section>
-            <section className="featured-program">
-                <div>
-                    <h1>Our Projects</h1>
+            <section className="our-partners">
+                <div className="bullet-point">
+                    <div className="header-bullet"></div>
+                    <h1>Our Partners</h1>
                 </div>
                 <div>
-                    <h2>
-                        Highlight key programs that Castle and Care is currently focusing on.
-                        Showcase upcoming events with small images or icons, dates, and titles with CTAs like "Join Us"
-                    </h2>
+                    <SponsorsCard/>
                 </div>
             </section>
-            <section className="testimonials">
+            <section className="testimonials-section">
                 <div>
-                    <h1 className="testimonial-title">
-                        What The People Think About Us
-                    </h1>
+                    <div className="bullet-point">
+                        <div className="header-bullet"></div>
+                        <h1>What The People Think About Us</h1>
+                    </div>
                 </div>
                 <div>
                     <TestimonialCarousel/>

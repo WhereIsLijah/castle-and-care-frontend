@@ -1,9 +1,9 @@
 import React from 'react';
-import '../../styles/footer.css';
+import '../../styles/common/footer.css';
 import LogoImage from '../../images/cac-logo.png';
 import FacebookIcon from '../../images/fb.svg';
-import TwitterIcon from '../../images/twitter.svg';
-import InstagramIcon from '../../images/ig.svg';
+import TwitterIcon from '../../images/social-icons/twitter.svg';
+import InstagramIcon from '../../images/social-icons/ig.svg';
 import useCustomNavigate from "../../hooks/customNavigate";
 import PrimaryButton from "./primaryButton";
 
@@ -28,13 +28,13 @@ const Footer = () => {
                     <a href="/terms">Terms</a>
                     <a href="/privacy">Privacy</a>
                     <div className="footer-social">
-                        <a href="">
+                        <a href="https://www.facebook.com/profile.php?id=100072161891595">
                             <img src={FacebookIcon} alt="Facebook logo"/>
                         </a>
                         <a href="">
                             <img src={TwitterIcon} alt="Twitter logo"/>
                         </a>
-                        <a href="">
+                        <a href="https://www.instagram.com/castleandcare/">
                             <img src={InstagramIcon} alt="Instagram logo"/>
                         </a>
                     </div>

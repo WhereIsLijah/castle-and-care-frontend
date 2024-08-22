@@ -1,0 +1,16 @@
+.sponsor-logo-container {
+    flex: 0 0 25%; /* Each logo takes up 25% of the container width (4 logos visible) */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    box-sizing: border-box;
+    height: 250px; /* Adjust to desired height */
+}
+
+.sponsor-logo-design {
+    max-height: 200px; /* Adjust to make logos bigger or smaller */
+    max-width: 100%;
+    object-fit: contain;
+    cursor: pointer;
+}

@@ -1,7 +1,7 @@
 
 .custom-carousel-image {
     width: 1600px; /* Set desired width */
-    height: 710px; /* Set desired height */
+    height: 725px; /* Set desired height */
     object-fit: cover; /* Ensure the image covers the entire area */
 }
 

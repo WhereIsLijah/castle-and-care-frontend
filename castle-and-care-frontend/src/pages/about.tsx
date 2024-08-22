@@ -1,6 +1,6 @@
 import React from "react";
 import VisionMission from "../images/VandM.png";
-import "../styles/about.css";
+import "../styles/pages/about.css";
 import TestimonialCard from "../components/common/testimonialCard";
 import HelpImg from "../images/help.jpg";
 import RaisingAwareness from "../images/raising_aware.jpg";

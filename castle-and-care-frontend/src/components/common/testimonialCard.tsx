@@ -1,5 +1,5 @@
 import React from "react";
-import "../../styles/testimonialCard.css"
+import "../../styles/common/testimonialCard.css"
 
 interface CardProps {
     imgSrc: string;

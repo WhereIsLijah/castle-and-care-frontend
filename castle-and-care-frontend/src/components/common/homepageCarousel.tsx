@@ -4,7 +4,7 @@ import NgoImage from '../../images/ngo3.jpeg' //
 import ReliefPoverty from '../../images/hero.jpg';
 import Volunteer from '../../images/ngo1.jpeg';
 import '@coreui/coreui/dist/css/coreui.min.css';
-import '../../styles/homepagecarousel.css'
+import '../../styles/common/homepagecarousel.css'
 
 
 const HomepageCarousel = () => {

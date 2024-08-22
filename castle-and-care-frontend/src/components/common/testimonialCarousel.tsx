@@ -1,7 +1,7 @@
 import React, {useRef, useEffect} from "react";
 import testimonialsData from "../../data/testimonialsData";
 import TestimonialCard from "./testimonialCard";
-import "../../styles/testimonialCarousel.css"
+import "../../styles/common/testimonialCarousel.css"
 
 const TestimonialCarousel: React.FC = () => {
 

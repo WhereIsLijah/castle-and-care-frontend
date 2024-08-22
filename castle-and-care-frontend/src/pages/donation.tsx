@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import '../styles/donation.css';
+import '../styles/pages/donation.css';
 
 const Donation: React.FC = () => {
     const [selectedFrequency, setSelectedFrequency] = useState<string>('One Time');
