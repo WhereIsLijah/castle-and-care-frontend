@@ -1,4 +1,9 @@
 /* Styles for the TestimonialCarousel component */
+.testimonial-element-container {
+    position: relative;
+}
+
+
 .testimonial-carousel {
     position: relative;
     width: 100%;
@@ -30,26 +35,16 @@
     box-sizing: border-box; /* Ensure padding and border are included in the width */
 }
 
-/*.scroll-button {*/
-/*    position: absolute;*/
-/*    top: 50%;*/
-/*    transform: translateY(-50%);*/
-/*    background-color: rgba(0, 0, 0, 0.5);*/
-/*    color: white;*/
-/*    border: none;*/
-/*    padding: 10px;*/
-/*    cursor: pointer;*/
-/*    z-index: 1;*/
-/*    border-radius: 50%;*/
-/*}*/
 
-/*.scroll-button.left {*/
-/*    left: 10px;*/
-/*}*/
+.scroll-button.left {
+    left: 10px;
+    margin-left: 200px;
+}
 
-/*.scroll-button.right {*/
-/*    right: 10px;*/
-/*}*/
+.scroll-button.right {
+    right: 10px;
+    margin-right: 200px;
+}
 
 .scroll-button:hover {
     background-color: rgba(0, 0, 0, 0.7);

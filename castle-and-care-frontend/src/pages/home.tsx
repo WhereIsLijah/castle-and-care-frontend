@@ -64,14 +64,16 @@ const Home: React.FC = () => {
                     </div>
                 </div>
                 <div className="homepage-projects flip-content">
-                    <img src={CommunityService} alt={"Community Service"} />
+                    <img src={CommunityService} alt={"Community Service"}/>
                     <div className="background-rectangle"></div>
                     <div>
                         <h2>Community Service</h2>
                         <p>Through regular medical camps, health education workshops, and free
                             screenings, the organization addresses critical healthcare needs and promotes well-being
-                            among vulnerable populations. The outreach initiative not only provides immediate care but also
-                            works to educate communities on preventive health practices, ensuring that they have the knowledge
+                            among vulnerable populations. The outreach initiative not only provides immediate care but
+                            also
+                            works to educate communities on preventive health practices, ensuring that they have the
+                            knowledge
                             resources to lead healthier lives.</p>
                         <div className="project-read-more-button">
                             <PrimaryButton onClick={goToEvents}>Read more</PrimaryButton>
@@ -85,8 +87,10 @@ const Home: React.FC = () => {
                         <h2>Medical Outreach</h2>
                         <p>Through regular medical camps, health education workshops, and free
                             screenings, the organization addresses critical healthcare needs and promotes well-being
-                            among vulnerable populations. The outreach initiative not only provides immediate care but also
-                            works to educate communities on preventive health practices, ensuring that they have the knowledge
+                            among vulnerable populations. The outreach initiative not only provides immediate care but
+                            also
+                            works to educate communities on preventive health practices, ensuring that they have the
+                            knowledge
                             and resources to lead healthier lives.</p>
                         <div className="project-read-more-button">
                             <PrimaryButton onClick={goToEvents}>Read more</PrimaryButton>
@@ -94,15 +98,6 @@ const Home: React.FC = () => {
                     </div>
                 </div>
 
-            </section>
-            <section className="our-partners">
-                <div className="bullet-point">
-                    <div className="header-bullet"></div>
-                    <h1>Our Partners</h1>
-                </div>
-                <div>
-                    <SponsorsCard/>
-                </div>
             </section>
             <section className="testimonials-section">
                 <div>
@@ -113,6 +108,15 @@ const Home: React.FC = () => {
                 </div>
                 <div>
                     <TestimonialCarousel/>
+                </div>
+            </section>
+            <section className="our-partners">
+                <div className="bullet-point">
+                    <div className="header-bullet"></div>
+                    <h1>Our Partners</h1>
+                </div>
+                <div>
+                    <SponsorsCard/>
                 </div>
             </section>
         </>

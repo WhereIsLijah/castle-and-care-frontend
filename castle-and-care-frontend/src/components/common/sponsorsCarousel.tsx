@@ -26,21 +26,23 @@ const SponsorCarousel:React.FC = () => {
 
     return(
         <>
-            <div className="sponsor-container">
-                <button className="scroll-button left" onClick={leftScroll}>‹</button>
-                <div className="sponsor-list" ref={scrollRef}>
-                    {sponsorsData.map((sponsor, index) => (
-                    <SponsorsItem
-                        key={index}
-                        imgSrc={sponsor.imgSrc}
-                        title={sponsor.title}
-                        alt={sponsor.alt}
-                        />
-                    ))}
+            <div className="sponsor-element-container">
+                <button className="scroll-button left-button" onClick={leftScroll}>‹</button>
+                <div className="sponsor-container">
+                    <div className="sponsor-list" ref={scrollRef}>
+                        {sponsorsData.map((sponsor, index) => (
+                            <SponsorsItem
+                                key={index}
+                                imgSrc={sponsor.imgSrc}
+                                title={sponsor.title}
+                                alt={sponsor.alt}
+                            />
+                        ))}
+                    </div>
                 </div>
-                <button className="scroll-button right" onClick={rightScroll}>›</button>
+                <button className="scroll-button right-button" onClick={rightScroll}>›</button>
             </div>
-        </>
+            </>
     );
 }
 

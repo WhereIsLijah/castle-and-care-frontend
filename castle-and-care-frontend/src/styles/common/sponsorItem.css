@@ -1,5 +1,5 @@
 .sponsor-logo-container {
-    flex: 0 0 25%; /* Each logo takes up 25% of the container width (4 logos visible) */
+    flex: 0 0 20%; /* Each logo takes up 25% of the container width (4 logos visible) */
     display: flex;
     justify-content: center;
     align-items: center;

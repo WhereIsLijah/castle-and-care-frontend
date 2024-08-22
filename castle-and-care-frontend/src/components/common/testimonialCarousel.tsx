@@ -22,34 +22,36 @@ const TestimonialCarousel: React.FC = () => {
         return () => clearInterval(interval); // Clean up the interval on component unmount
     }, []);
 
-    // const scrollLeft = () => {
-    //     if (scrollRef.current) {
-    //         scrollRef.current.scrollBy({ left: -700, behavior: 'smooth' }); // Adjust scroll distance as needed
-    //     }
-    // };
-    //
-    // const scrollRight = () => {
-    //     if (scrollRef.current) {
-    //         scrollRef.current.scrollBy({ left: 700, behavior: 'smooth' }); // Adjust scroll distance as needed
-    //     }
-    // };
+    const scrollLeft = () => {
+        if (scrollRef.current) {
+            scrollRef.current.scrollBy({ left: -700, behavior: 'smooth' }); // Adjust scroll distance as needed
+        }
+    };
+
+    const scrollRight = () => {
+        if (scrollRef.current) {
+            scrollRef.current.scrollBy({ left: 700, behavior: 'smooth' }); // Adjust scroll distance as needed
+        }
+    };
 
     return(
         <>
-            {/*<button className="scroll-button left" onClick={scrollLeft}>‹</button>*/}
-            <div className="testimonial-carousel">
-                <div className="card-list" ref={scrollRef}>
-                    {testimonialsData.map((data) => (
-                        <TestimonialCard
-                            imgSrc={data.imgSrc}
-                            testimonial={data.testimonial}
-                            userName={data.userName}
-                            title={data.title}
-                        />
-                    ))}
+            <div className="testimonial-element-container">
+                <button className="scroll-button left" onClick={scrollLeft}>‹</button>
+                <div className="testimonial-carousel">
+                    <div className="card-list" ref={scrollRef}>
+                        {testimonialsData.map((data) => (
+                            <TestimonialCard
+                                imgSrc={data.imgSrc}
+                                testimonial={data.testimonial}
+                                userName={data.userName}
+                                title={data.title}
+                            />
+                        ))}
+                    </div>
                 </div>
+                <button className="scroll-button right" onClick={scrollRight}>›</button>
             </div>
-            {/*<button className="scroll-button right" onClick={scrollRight}>›</button>*/}
         </>
     );
 }

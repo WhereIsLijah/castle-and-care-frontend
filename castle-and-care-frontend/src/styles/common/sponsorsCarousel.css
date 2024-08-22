@@ -1,9 +1,14 @@
+.sponsor-element-container{
+    position: relative;
+}
+
 .sponsor-container {
-    width: 100%;
+    width: 85%;
     overflow: hidden; /* Hide overflow to make scroll smooth */
     position: relative; /* Ensure buttons are positioned relative to this container */
     display: flex;
     align-items: center; /* Align buttons vertically */
+    margin-left: 100px;
 }
 
 .sponsor-list {
@@ -39,12 +44,14 @@
     border-radius: 50%;
 }
 
-.scroll-button.left {
+.scroll-button.left-button {
     left: 10px;
+    margin-left: 20px;
 }
 
-.scroll-button.right {
+.scroll-button.right-button {
     right: 10px;
+    margin-right: 18px;
 }
 
 .sponsor-card {
